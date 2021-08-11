@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,29 @@
 		7530EB0026C42208005AD2FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530EAFE26C42208005AD2FB /* Main.storyboard */; };
 		7530EB0226C42209005AD2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7530EB0126C42209005AD2FB /* Assets.xcassets */; };
 		7530EB0526C42209005AD2FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530EB0326C42209005AD2FB /* LaunchScreen.storyboard */; };
+		7530EB0E26C42552005AD2FB /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB0D26C42552005AD2FB /* RxSwift.xcframework */; };
+		7530EB0F26C42552005AD2FB /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB0D26C42552005AD2FB /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7530EB1326C425C0005AD2FB /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB1226C425C0005AD2FB /* RxCocoa.xcframework */; };
+		7530EB1426C425C0005AD2FB /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB1226C425C0005AD2FB /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7530EB1626C425F1005AD2FB /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB1526C425F1005AD2FB /* RxRelay.xcframework */; };
+		7530EB1726C425F1005AD2FB /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7530EB1526C425F1005AD2FB /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7530EB1026C42552005AD2FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7530EB1726C425F1005AD2FB /* RxRelay.xcframework in Embed Frameworks */,
+				7530EB0F26C42552005AD2FB /* RxSwift.xcframework in Embed Frameworks */,
+				7530EB1426C425C0005AD2FB /* RxCocoa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7530EAF526C42208005AD2FB /* ios_Carthage_RxSwift_import.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_Carthage_RxSwift_import.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +46,9 @@
 		7530EB0126C42209005AD2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7530EB0426C42209005AD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7530EB0626C42209005AD2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7530EB0D26C42552005AD2FB /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		7530EB1226C425C0005AD2FB /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		7530EB1526C425F1005AD2FB /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7530EB1626C425F1005AD2FB /* RxRelay.xcframework in Frameworks */,
+				7530EB0E26C42552005AD2FB /* RxSwift.xcframework in Frameworks */,
+				7530EB1326C425C0005AD2FB /* RxCocoa.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,7 @@
 			children = (
 				7530EAF726C42208005AD2FB /* ios_Carthage_RxSwift_import */,
 				7530EAF626C42208005AD2FB /* Products */,
+				7530EB0C26C42552005AD2FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +96,16 @@
 			path = ios_Carthage_RxSwift_import;
 			sourceTree = "<group>";
 		};
+		7530EB0C26C42552005AD2FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7530EB1526C425F1005AD2FB /* RxRelay.xcframework */,
+				7530EB1226C425C0005AD2FB /* RxCocoa.xcframework */,
+				7530EB0D26C42552005AD2FB /* RxSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +116,8 @@
 				7530EAF126C42208005AD2FB /* Sources */,
 				7530EAF226C42208005AD2FB /* Frameworks */,
 				7530EAF326C42208005AD2FB /* Resources */,
+				7530EB1026C42552005AD2FB /* Embed Frameworks */,
+				7530EB1126C4255F005AD2FB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +172,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7530EB1126C4255F005AD2FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7530EAF126C42208005AD2FB /* Sources */ = {
